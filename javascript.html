@@ -1,0 +1,48 @@
+<script>
+/*linea que permite escribir*/
+document.write('Hola');//escribo texto hola
+document.write('<br>');//escribo una etiqueta html de salto de línea en el texto (retorno de carro).
+
+document.write ('Este es mi primer programa con javascript en este curso');
+document.write('<br>');
+document.write('<br>');
+document.write("Mi nombre es Julieta Ochoa, tengo 23 años y soy estudiante de Diseño Gráfico y Animación Digital.");
+document.write('<br>');
+document.write('<br>');
+document.write("Soy de Reynosa y me gusta diseñar. Este es mi ultimo cuatrimestre y espero aprender mucho.");
+document.write('<br>');
+document.write('<br>');
+document.write("Hagamos operaciones");
+document.write('<br>');
+document.write('<br>');
+
+/*creo variables*/
+var baserombo;
+var alturarombo;
+var ladorectangulo;
+
+/*pido datos en un dialogo del explorador*/
+baserombo=prompt('dame la base del rombo:','');//pido base rombo
+alturarombo=prompt('dame la altura del rombo','');//pido altura rombo
+ladorectangulo=prompt('dame el lado del rectangulo','');//pido lado rectangulo
+
+/*convierto valores a valores numericos para poder hacer operaciones*/
+baserombo=parseInt(baserombo);
+alturarombo=parseInt(alturarombo);
+ladorectangulo=parseInt(ladorectangulo);
+
+/*hago operaciones*/
+//hago calculo del perimetro del rectangulo
+var perimetrorectangulo=ladorectangulo + ladorectangulo + ladorectangulo + ladorectangulo;
+//hago calculo area del rombo
+var arearombo= (baserombo * alturarombo) / 2;
+
+/*escribo resultados*/
+document.write('el perimetro del rectangulo es: ');
+document.write(perimetrorectangulo);
+document.write('<br>');
+document.write('<br>');
+document.write('el area del rombo es: ');
+document.write(arearombo);
+
+</script>
